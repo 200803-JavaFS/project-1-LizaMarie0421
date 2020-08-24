@@ -40,7 +40,7 @@ public class UserController {
 			}
 			else if (ur.getRole().equals("Manager")) {
 				System.out.println("inside login as manager");
-				rd =  req.getRequestDispatcher("managerSuccess.html");
+				rd =  req.getRequestDispatcher("managerSuccess");
 			}
 			
 			//now we forward
@@ -52,6 +52,12 @@ public class UserController {
 		}
 	}
 	
-
+	public void display(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
+		System.out.println("in display do something");
+		
+		RequestDispatcher rd = null;
+		
+		rd =  req.getRequestDispatcher("employeeSuccess.html");
+	}
 	
 }

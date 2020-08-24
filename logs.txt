@@ -15,3 +15,24 @@
 2020-08-23 12:40:50 INFO  UserService:16 - Finding UseRole with user id 1
 2020-08-23 12:41:35 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
 2020-08-23 12:41:36 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:21:44 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:21:44 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:27:39 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:27:40 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:28:33 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:28:34 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:32:23 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:32:24 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:35:35 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:35:36 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:36:23 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:36:24 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:38:00 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:38:00 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:39:38 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:39:39 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:48:34 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:48:35 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-23 13:49:25 INFO  UserService:27 - Finding User with username: kc2009 and password: 
+2020-08-23 13:49:30 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-23 13:49:30 INFO  UserService:16 - Finding UseRole with user id 1

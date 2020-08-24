@@ -40,10 +40,14 @@ public class MasterServlet extends HttpServlet{
 			switch(portions[0]) {
 				case "login":
 					if (req.getMethod().equals("POST")) {
-						System.out.println("inside login");
+						System.out.println("inside login case");
 						uc.login(req, res);
 					}
-			
+//				case "employeeSuccess":
+//					if (req.getMethod().equals("POST")) {
+//						System.out.println("inside employee case");
+//						uc.display(req, res);
+//					}
 			}
 					
 		}catch (NumberFormatException e ) {
