@@ -36,3 +36,75 @@
 2020-08-23 13:49:25 INFO  UserService:27 - Finding User with username: kc2009 and password: 
 2020-08-23 13:49:30 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
 2020-08-23 13:49:30 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-25 19:43:49 INFO  UserService:27 - Finding User with username: kd and password: jj
+2020-08-25 19:44:16 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-25 19:44:23 INFO  UserService:27 - Finding User with username: kd and password: jj
+2020-08-25 19:46:05 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 19:46:12 INFO  UserService:27 - Finding User with username: kc2 and password: bese
+2020-08-25 19:46:38 INFO  UserService:27 - Finding User with username: kc2 and password: bese
+2020-08-25 19:46:46 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 19:46:51 INFO  UserService:27 - Finding User with username: ln and password: bestie
+2020-08-25 19:47:02 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 19:47:06 INFO  UserService:27 - Finding User with username: liz1988 and password: wesle vy
+2020-08-25 21:08:56 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 21:09:41 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 21:11:46 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-25 21:12:03 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-25 21:12:26 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 21:13:55 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 21:16:08 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 21:24:27 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-25 21:24:28 INFO  UserService:16 - Finding UseRole with user id 0
+2020-08-25 21:24:57 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:24:58 INFO  UserService:16 - Finding UseRole with user id 0
+2020-08-25 21:27:01 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-25 21:27:50 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:27:51 INFO  UserService:16 - Finding UseRole with user id 0
+2020-08-25 21:28:34 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-25 21:28:54 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:28:55 INFO  UserService:16 - Finding UseRole with user id 0
+2020-08-25 21:29:52 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:29:53 INFO  UserService:16 - Finding UseRole with user id 0
+2020-08-25 21:34:02 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-25 21:34:11 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:34:11 INFO  UserService:16 - Finding UseRole with user id 0
+2020-08-25 21:35:40 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:35:41 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-25 21:35:41 INFO  UserService:16 - Finding UseRole with user id 2
+2020-08-26 09:45:40 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:45:40 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:45:41 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 09:47:27 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 09:48:05 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:48:06 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:48:06 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 09:49:48 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:49:48 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:49:48 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 09:49:56 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 09:50:01 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 09:50:03 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 09:50:09 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 09:50:16 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:50:16 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:50:16 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 09:50:27 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:50:28 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:50:28 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 09:55:44 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:55:45 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 09:55:45 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 22:00:01 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 22:00:11 INFO  UserService:27 - Finding User with username: null and password: null
+2020-08-26 22:00:39 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 22:00:40 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 22:00:40 INFO  UserService:16 - Finding UseRole with user id 1
+2020-08-26 22:01:01 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-26 22:01:01 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-26 22:01:01 INFO  UserService:16 - Finding UseRole with user id 2
+2020-08-26 22:01:34 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-26 22:01:35 INFO  UserService:27 - Finding User with username: liz1988 and password: wesley
+2020-08-26 22:01:35 INFO  UserService:16 - Finding UseRole with user id 2
+2020-08-26 22:02:37 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 22:02:37 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-08-26 22:02:38 INFO  UserService:16 - Finding UseRole with user id 1

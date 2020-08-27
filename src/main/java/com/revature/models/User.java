@@ -3,8 +3,8 @@ package com.revature.models;
 public class User {
 
 	private int id;
-	private String username; 
-	private String password;
+	public String username; 
+	public String password;
 	private String first;
 	private String last;
 	private String email;

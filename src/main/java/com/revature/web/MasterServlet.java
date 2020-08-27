@@ -3,11 +3,13 @@ package com.revature.web;
 import java.io.IOException;
 import java.util.Arrays;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.revature.controller.LoginController;
 import com.revature.controller.ReimbController;
 import com.revature.controller.UserController;
 
@@ -16,6 +18,8 @@ public class MasterServlet extends HttpServlet{
 
 	private static UserController uc = new UserController();
 	private static ReimbController rc = new ReimbController();
+	private static	LoginController lc= new LoginController();
+
 
 	
 	public MasterServlet() {
@@ -27,6 +31,7 @@ public class MasterServlet extends HttpServlet{
 	
 		res.setContentType("application/json");
 		res.setStatus(404);
+		RequestDispatcher rd = null;
 		
 		final String URI= req.getRequestURI().replace("/project1/", "");
 		String[] portions = URI.split("/");
@@ -39,10 +44,12 @@ public class MasterServlet extends HttpServlet{
 			System.out.println("inside try");
 			switch(portions[0]) {
 				case "login":
-					if (req.getMethod().equals("POST")) {
-						System.out.println("inside login case");
-						uc.login(req, res);
-					}
+					//RequestDispatcher rd = null;
+					lc.login(req,res);
+					//rd= req.getRequestDispatcher("index.html");
+					//rd.include(req, res);
+					break;
+				
 //				case "employeeSuccess":
 //					if (req.getMethod().equals("POST")) {
 //						System.out.println("inside employee case");

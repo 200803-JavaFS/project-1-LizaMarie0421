@@ -44,4 +44,12 @@ public class UserService {
 		return uDao.updateUser(u);
 	}
 	
+	public boolean login(User u) {
+		User uN = findByUserPassword(u.username,u.password);
+		if (u.username.equals(uN.getUsername()) && u.password.equals(uN.getPassword())) {
+			return true;
+		}
+		return false;
+	}
+	
 }

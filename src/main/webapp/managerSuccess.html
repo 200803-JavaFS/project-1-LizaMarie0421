@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" type: "text/css" href="ExternalCSS.css">
+	<meta charset="ISO-8859-1">
+	<title>Manager Page</title>
 </head>
 <body>
 
-<div align="center">
-		<h3>Manager Success</h3>
-</div>
+	<div align="center">
+		<h3>Manager Page</h3>
+	</div>
 
+	<div id="tableReimb">
+		<table class="reimbTable">
+			<thead>
+				<tr class="columns">
+					<th id="reimbId">Id</th>
+					<th id="reimbAmount">Amount</th>
+					<th id="reimbSubTime">Submission Time</th>
+					<th id="reimbResTime">Resolved Time</th>
+					<th id="reimbDesc">Description</th>
+					<th id="reimbAuthor">Created By</th>
+					<th id="reimbResolver">Resolved By</th>
+					<th id="reimbStatus">Status</th>
+					<th id="reimbType">Type</th>
+				</tr>
+			</thead>
+			<tbody class="reimbTable" id="bodyTable">
+				<tr class="rows">
+					<td>cell1_1</td>
+					<td>cell2_1</td>
+					<td>cell3_1</td>
+					<td>cell4_1</td>
+					<td>cell5_1</td>
+					<td>cell6_1</td>
+					<td>cell7_1</td>
+					<td>cell8_1</td>
+					<td>cell9_1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="reimbForm" id="changeStatusForm">
+		<form id="form_122252" class="formInfo" method="post" action="">
+			<div class="form_description">
+				<h1 align="relative">Approve or Deny a Request</h1>
+				<p></p>
+			</div>
+			<div class="formData">
+				<label class="description" for="reimbAmount">Reimbursement ID </label>
+				<input id="element_1" name="reimbAmount" class="element number" size="1" type="number" value="" />
+				<br />
+				<span>
+					<input id="element_4_1" name="reimbStatus" class="element radio" type="radio" value="3" />
+					<label class="choice" for="reimbStatus">Approve</label>
+					<input id="element_4_2" name="reimbStatus" class="element radio" type="radio" value="3" />
+					<label class="choice" for="reimbStatus">Deny</label>
+				</span>
+				<br /><br />
+				<button type="button" id="addRequest" class="btn">Update Request</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="managerFetch.js"></script>
 </body>
 </html>
