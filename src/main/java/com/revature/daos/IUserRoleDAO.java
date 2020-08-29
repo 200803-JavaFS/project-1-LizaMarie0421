@@ -1,8 +1,10 @@
 package com.revature.daos;
 
+import com.revature.models.User;
 import com.revature.models.UserRole;
 
 public interface IUserRoleDAO {
 
-	public UserRole findById(int id); 
+	public boolean insertUserRole(UserRole ur);
+	public UserRole selectById(int id);
 }

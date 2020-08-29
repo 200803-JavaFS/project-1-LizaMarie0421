@@ -1,9 +1,28 @@
 package com.revature.models;
 
-public class ReimbStatus {
+import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="reimb_status")
+public class ReimbStatus {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="reimb_status_id")
 	private int id;
+	
+	@Column(name="reimb_status")
 	private String status;
+	
+	
 	public ReimbStatus() {
 		super();
 	}
@@ -50,6 +69,8 @@ public class ReimbStatus {
 		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		return result;
 	}
+
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -68,10 +89,18 @@ public class ReimbStatus {
 			return false;
 		return true;
 	}
+
+
 	@Override
 	public String toString() {
 		return "ReimbStatus [id=" + id + ", status=" + status + "]";
 	}
+
+
+	
+
+	
+
 	
 	
 }

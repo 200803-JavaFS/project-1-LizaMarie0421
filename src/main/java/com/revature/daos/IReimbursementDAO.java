@@ -3,19 +3,20 @@ package com.revature.daos;
 import java.util.List;
 
 import com.revature.models.Reimbursement;
+import com.revature.models.User;
 
 public interface IReimbursementDAO {
 
-	public List<Reimbursement> findAll();
+	//public void insert(Reimbursement r);
+	public boolean insertReimb(Reimbursement r);
+	//public void update(Reimbursement r);
+	public boolean update(Reimbursement r);
 	
-	public Reimbursement findById(int id);
+	public Reimbursement selectById(int id);
 	
-	public List<Reimbursement> findByUser(int userId);
+	public List<Reimbursement> selectByAuthor(User u);
 	
-	public List<Reimbursement> findByStatus(String status);
+	public List<Reimbursement> selectByStatus(int statusId);
 	
-	public boolean addReimbursement(Reimbursement r);
-	
-	public boolean updateReimbursement(Reimbursement r);
-	
+	public List<Reimbursement> selectAll();
 }

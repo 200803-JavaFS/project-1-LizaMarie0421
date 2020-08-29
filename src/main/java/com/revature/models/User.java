@@ -1,21 +1,69 @@
 package com.revature.models;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="users")
 public class User {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@Column(name="user_id")
 	private int id;
+	
+	//@Column(name="user_username", unique=true)
 	public String username; 
+	
+	//(name="user_password")
 	public String password;
+	
+	//@Column(name="user_first")
 	private String first;
+	
+	//@Column(name="user_last")
 	private String last;
+	
+	//@Column(name="user_email")
 	private String email;
 	
-	private int userRoleId;
+	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@JoinColumn(name="user_role_id")
+	private UserRole userRole;
+	//@LazyCollection(LazyCollectionOption.FALSE)
+//	@OneToMany(mappedBy="author", fetch=FetchType.LAZY)
+//	private List<Reimbursement> reimbAuthorList;
+////	
+//	@OneToMany(mappedBy="resolver", fetch=FetchType.LAZY)
+//	private List<Reimbursement> reimbResolverList;
 	
 	public User() {
 		super();
 	}
 
-	public User(int id, String username, String password, String first, String last, String email, int userRoleId) {
+	public User(String username, String password, String first, String last, String email, UserRole userRole) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.first = first;
+		this.last = last;
+		this.email = email;
+		this.userRole = userRole;
+	}
+
+
+	public User(int id, String username, String password, String first, String last, String email, UserRole userRole) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -23,17 +71,7 @@ public class User {
 		this.first = first;
 		this.last = last;
 		this.email = email;
-		this.userRoleId = userRoleId;
-	}
-
-	public User(String username, String password, String first, String last, String email, int userRoleId) {
-		super();
-		this.username = username;
-		this.password = password;
-		this.first = first;
-		this.last = last;
-		this.email = email;
-		this.userRoleId = userRoleId;
+		this.userRole = userRole;
 	}
 
 	public int getId() {
@@ -84,12 +122,12 @@ public class User {
 		this.email = email;
 	}
 
-	public int getUserRoleId() {
-		return userRoleId;
+	public UserRole getUserRole() {
+		return userRole;
 	}
 
-	public void setUserRoleId(int userRoleId) {
-		this.userRoleId = userRoleId;
+	public void setUserRole(UserRole userRole) {
+		this.userRole = userRole;
 	}
 
 	@Override
@@ -101,7 +139,7 @@ public class User {
 		result = prime * result + id;
 		result = prime * result + ((last == null) ? 0 : last.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + userRoleId;
+		result = prime * result + ((userRole == null) ? 0 : userRole.hashCode());
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
@@ -137,7 +175,10 @@ public class User {
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
-		if (userRoleId != other.userRoleId)
+		if (userRole == null) {
+			if (other.userRole != null)
+				return false;
+		} else if (!userRole.equals(other.userRole))
 			return false;
 		if (username == null) {
 			if (other.username != null)
@@ -150,9 +191,9 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", password=" + password + ", first=" + first + ", last="
-				+ last + ", email=" + email + ", userRoleId=" + userRoleId + "]";
+				+ last + ", email=" + email + ", userRole=" + userRole + "]";
 	}
+	
+	
 
-	
-	
 }
