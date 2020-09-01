@@ -1,9 +1,8 @@
 package com.revature.models;
 
-import java.util.List;
+import java.io.Serializable;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -11,12 +10,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name="users")
-public class User {
+//@JsonIgnoreProperties(ignoreUnknown = true)
+//@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+public class User implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -37,10 +41,12 @@ public class User {
 	
 	//@Column(name="user_email")
 	private String email;
-	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	//@JsonManagedReference(value= "UserRole")
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="user_role_id")
 	private UserRole userRole;
+	
+	
 	//@LazyCollection(LazyCollectionOption.FALSE)
 //	@OneToMany(mappedBy="author", fetch=FetchType.LAZY)
 //	private List<Reimbursement> reimbAuthorList;
@@ -121,7 +127,7 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
 	public UserRole getUserRole() {
 		return userRole;
 	}

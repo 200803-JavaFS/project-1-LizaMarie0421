@@ -15,28 +15,28 @@ public class UserService {
 	
 	public List<User> findAll(){
 		log.info("Retrieving all users");
-		return uDao.findAll();
+		return uDao.selectAll();
 	}
 
 	public User findById(int id) {
 		log.info("Finding User with id "+ id);
-		return uDao.findById(id);
+		return uDao.selectById(id);
 	}
 	
 	public User findByUserPassword(String username, String password) {
 		log.info("Finding User with username: "+ username + " and password: " + password);
-		return uDao.findByUserPassword(username, password);
+		return uDao.selectByCredentials(username, password);
 	}
 
 	public User findByUsername(String username) {
 		log.info("Finding User with username: "+ username);
-		return uDao.findByUsername(username);
+		return uDao.selectByUsername(username);
 	}
 	
 	
 	public boolean addUser(User u) {
 		log.info("Adding User: "+ u);
-		return uDao.addUser(u);
+		return uDao.insertUser(u);
 	}
 	
 	public boolean updateUser(User u) {
@@ -44,12 +44,5 @@ public class UserService {
 		return uDao.updateUser(u);
 	}
 	
-	public boolean login(User u) {
-		User uN = findByUserPassword(u.username,u.password);
-		if (u.username.equals(uN.getUsername()) && u.password.equals(uN.getPassword())) {
-			return true;
-		}
-		return false;
-	}
 	
 }

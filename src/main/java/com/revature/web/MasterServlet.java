@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.revature.controller.LoginController;
 import com.revature.controller.ReimbController;
 import com.revature.controller.UserController;
+import com.revature.models.User;
+import com.revature.models.UserRole;
+import com.revature.services.UserService;
 
 
 public class MasterServlet extends HttpServlet{
@@ -19,6 +22,7 @@ public class MasterServlet extends HttpServlet{
 	private static UserController uc = new UserController();
 	private static ReimbController rc = new ReimbController();
 	private static	LoginController lc= new LoginController();
+	private static UserService us = new UserService();
 
 
 	
@@ -44,10 +48,26 @@ public class MasterServlet extends HttpServlet{
 			System.out.println("inside try");
 			switch(portions[0]) {
 				case "login":
-					//RequestDispatcher rd = null;
 					lc.login(req,res);
-					//rd= req.getRequestDispatcher("index.html");
-					//rd.include(req, res);
+					break;
+				case "success": 
+					if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
+						User u = (User) req.getSession().getAttribute("user");
+						
+						System.out.println("**************** User username: "+  u.username);
+						
+						u = us.findByUsername(u.username);
+						UserRole ur= u.getUserRole();	
+						System.out.println(ur);
+						if(req.getMethod().equals("GET")) {
+							uc.setUserRole(req, res, u);
+						}
+					}
+					break;
+				case "reimbursements":
+					System.out.println("in reimbursements");
+//					System.out.println("user with user ID:" + u.getId());
+					//rc.getAllReimbursementsByAuthor(req,res, u);
 					break;
 				
 //				case "employeeSuccess":

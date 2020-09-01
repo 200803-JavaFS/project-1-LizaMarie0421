@@ -2,11 +2,9 @@ package com.revature.daos;
 
 import java.util.List;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.revature.models.Reimbursement;
 import com.revature.models.User;
@@ -37,14 +35,16 @@ public class ReimbursementDAO implements IReimbursementDAO{
 	@Override
 	public boolean update(Reimbursement r) {
 		Session ses = HibernateUtil.getSession();
+		Transaction tx= ses.beginTransaction();
 		try {
 			ses.merge(r);
+			tx.commit();
 			return true;
-		}catch (HibernateException e) {
+		} catch(HibernateException e) {
 			e.printStackTrace();
+			tx.rollback();
 			return false;
 		}
-		
 	}
 
 	@Override

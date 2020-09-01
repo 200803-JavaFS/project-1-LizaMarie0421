@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import com.revature.daos.IReimbursementDAO;
 import com.revature.daos.ReimbursementDAO;
 import com.revature.models.Reimbursement;
+import com.revature.models.User;
 
 public class ReimbursementService {
 	private static final Logger log = LogManager.getLogger(ReimbursementService.class);
@@ -15,32 +16,34 @@ public class ReimbursementService {
 	
 	public List<Reimbursement> findAll(){
 		log.info("Retrieving all reimbursements");
-		return rDao.findAll();
+		return rDao.selectAll();
 	}
 	
 	public Reimbursement findById(int id) {
 		log.info("Finding Reimbursement with id "+ id);
-		return rDao.findById(id);
+		return rDao.selectById(id);
 	}	
 	
-	public List<Reimbursement> findByUser(int userId) {
-		log.info("Retrieving all reimbursements tied to user with user_id="+ userId);
-		return rDao.findByUser(userId);
+	public List<Reimbursement> findByUser(User u) {
+		log.info("Retrieving all reimbursements tied to user with user_id="+ u.getId());
+		return rDao.selectByAuthor(u);
 	}
 	
-	public List<Reimbursement> findByStatus(String status){
-		return rDao.findByStatus(status);
+	public List<Reimbursement> findByStatus(int statusId){
+		return rDao.selectByStatus(statusId);
 	}
 	
 	public boolean addReimbursement(Reimbursement r) {
 		log.info("Adding reimbursements: "+ r);
-		return rDao.addReimbursement(r);
+		return rDao.insertReimb(r);
 	}
 	
 	public boolean updateReimbursement(Reimbursement r) {
 		log.info("Updating reimbursement: "+ r);
-		return rDao.updateReimbursement(r);
+		return rDao.update(r);
 		
 	}
+	
+	
 	
 }

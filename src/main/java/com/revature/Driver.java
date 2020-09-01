@@ -69,8 +69,11 @@ public class Driver {
 		for(Reimbursement ra: listByAuthor) {
 			System.out.println("this should be og44: "+ ra);
 		}
-	
-	}
+		
+		System.out.println("Finding by usernamekc 2009 and password bestie======================");
+		User userKC  = uDao.selectByCredentials("kc2009", "bestie");
+		System.out.println(userKC);
+		}
 
 	public static void insertValues() {
 		UserRole ur= new UserRole(3,"Manager");
