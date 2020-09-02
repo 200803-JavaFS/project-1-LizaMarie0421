@@ -430,3 +430,38 @@
 2020-09-02 09:48:39 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
 2020-09-02 09:50:01 INFO  UserService:22 - Finding User with id 15
 2020-09-02 09:50:01 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 13:48:24 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-02 13:48:30 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-02 13:48:30 INFO  UserService:22 - Finding User with id 15
+2020-09-02 13:48:30 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 13:48:47 INFO  UserService:22 - Finding User with id 15
+2020-09-02 13:48:47 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.89, submitted=2020-09-02 13:48:47.076, resolved=null, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=3, type=Food]]
+2020-09-02 13:49:37 INFO  UserService:22 - Finding User with id 15
+2020-09-02 13:49:37 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.89, submitted=2020-09-02 13:49:37.931, resolved=null, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=3, type=Food]]
+2020-09-02 13:49:54 INFO  UserService:22 - Finding User with id 15
+2020-09-02 13:50:00 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 13:50:04 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-02 13:50:04 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-02 13:50:05 INFO  UserService:22 - Finding User with id 15
+2020-09-02 13:50:05 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 13:50:18 INFO  UserService:22 - Finding User with id 15
+2020-09-02 13:50:18 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.89, submitted=2020-09-02 13:50:18.181, resolved=null, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=3, type=Food]]
+2020-09-02 14:32:56 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-02 14:32:56 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-02 14:32:58 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-02 14:33:02 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-02 14:33:03 INFO  UserService:22 - Finding User with id 15
+2020-09-02 14:33:03 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 14:33:19 INFO  UserService:22 - Finding User with id 15
+2020-09-02 14:33:19 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.89, submitted=2020-09-02 14:33:19.378, resolved=null, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=3, type=Food]]
+2020-09-02 14:35:51 INFO  UserService:22 - Finding User with id 15
+2020-09-02 14:35:56 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.89, submitted=2020-09-02 14:35:51.001, resolved=null, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=3, type=Food]]
+2020-09-02 14:35:56 INFO  UserService:22 - Finding User with id 15
+2020-09-02 14:35:56 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 14:38:04 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-02 14:38:04 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-02 14:38:04 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 14:38:12 INFO  ReimbursementService:23 - Finding Reimbursement with id 8
+2020-09-02 14:38:12 INFO  UserService:22 - Finding User with id 1
+2020-09-02 14:38:12 INFO  ReimbursementService:42 - Updating reimbursement: Reimbursement [id=8, amount=67.89, submitted=2020-09-02 14:35:51.001, resolved=2020-09-02 14:38:12.317, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=User [id=1, username=lizzvj, password=cashjoey, first=Lizette, last=Jimenez, email=lizzvj@gmail.com, userRole=UserRole [id=3, role=Manager]], status=ReimbStatus [id=2, status=Approved], type=ReimbType [id=3, type=Food]]
+2020-09-02 14:38:16 INFO  ReimbursementService:18 - Retrieving all reimbursements

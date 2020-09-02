@@ -114,7 +114,7 @@ public class ReimbController {
 		Timestamp ts= new Timestamp(System.currentTimeMillis());
 		String description = rdto.getDescription();
 		User author = us.findById(rdto.getAuthorId());
-		ReimbStatus rStatus= new ReimbStatus(1, "Pending");
+		ReimbStatus rnewStatus= new ReimbStatus(1, "Pending");
 		
 		String type = rdto.getType();
 		System.out.println(type);
@@ -130,7 +130,7 @@ public class ReimbController {
 			rt=new ReimbType(4, "Other");
 		}
 		//create new reimbursement with constructor
-		Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rStatus, rt);
+		Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rnewStatus, rt);
 		System.out.println(addedReimb);
 
 		if(rs.addReimbursement(addedReimb)) {

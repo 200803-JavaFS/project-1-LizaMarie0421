@@ -24,11 +24,14 @@ public class ReimbursementDAO implements IReimbursementDAO{
 	@Override
 	public boolean insertReimb(Reimbursement r) {
 		Session ses = HibernateUtil.getSession();
+		Transaction tx= ses.beginTransaction();
 		try {
 			ses.save(r);
+			tx.commit();
 			return true;
-		} catch (Exception e) {
+		} catch(HibernateException e) {
 			e.printStackTrace();
+			tx.rollback();
 			return false;
 		}
 	}
