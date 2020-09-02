@@ -82,6 +82,17 @@ public class MasterServlet extends HttpServlet{
 					System.out.println("in add reimbursement");
 					rc.addReimbursement(req,res);
 					break;
+				case "filter":
+					System.out.println("in filter");
+					if (portions.length==2){
+						int statusId= Integer.parseInt(portions[1]);
+						System.out.println(statusId);
+						rc.getAllReimbursementsByStatus(res, statusId);
+					}else {
+						rc.getAllReimbursements(res);
+					}
+					
+					break;
 			}
 					
 		}catch (NumberFormatException e ) {

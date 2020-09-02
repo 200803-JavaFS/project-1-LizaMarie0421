@@ -8,6 +8,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.ReimbStatus;
 import com.revature.models.ReimbType;
@@ -141,6 +142,20 @@ public class ReimbController {
 			res.setStatus(403);
 		}
 		
+	}
+
+	public void getAllReimbursementsByStatus(HttpServletResponse res, int statusId) throws IOException {
+		List<Reimbursement> allReimb = rs.findByStatus(statusId);
+		
+		
+		if(allReimb.isEmpty()) {
+			res.setStatus(204);
+		}else {
+			res.setStatus(200);
+			String json = om.writeValueAsString(allReimb);
+			res.getWriter().println(json);
+			
+		}
 	}
 
 

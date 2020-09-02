@@ -32,20 +32,32 @@ async function allReimbursementsByAuthor() {
             let status = row.insertCell(7);
             let type = row.insertCell(8);
             id.innerHTML = reimbursement.id;
-            amount.innerHTML = "$ "+ reimbursement.amount;
-            sTime.innerHTML = reimbursement.submitted;
-            rTime.innerHTML = reimbursement.resolved;
+            amount.innerHTML = "$ " + reimbursement.amount;
+
+            dateS = new Date(reimbursement.submitted);
+            sTime.innerHTML = dateS.toLocaleString();
+            // rTime.innerHTML = reimbursement.resolved;
+
+            let reimbResolvedTime = reimbursement.resolved;
+            if (reimbResolvedTime != null) {
+                console.log(reimbursement.resolved);
+                let dateR = new Date(reimbursement.resolved);
+                rTime.innerHTML = dateR.toLocaleString();
+            } else {
+                rTime.innerHTML = reimbursement.resolved;
+            }
+
             desc.innerHTML = reimbursement.description;
             author.innerHTML = reimbursement.author.username;
             //insert if statement if resolver is not equal to null or null
 
             let reimbResolver = reimbursement.resolver;
             if (reimbResolver != null) {
+                console.log(reimbResolver);
                 resolver.innerHTML = reimbursement.resolver.username;
             } else {
                 resolver.innerHTML = reimbursement.resolver;
             }
-            resolver.innerHTML = reimbursement.resolver;
             status.innerHTML = reimbursement.status.status;
             type.innerHTML = reimbursement.type.type;
 

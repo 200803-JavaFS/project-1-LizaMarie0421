@@ -12,7 +12,17 @@
 		<h3>Manager Page</h3>
 	</div>
 
+
 	<div id="tableReimb">
+		<div class="filter-group">
+			<label>Status</label>
+			<select onchange="filterStatus()" class="form-control" name="statusChoice" id="statusChoice">
+				<option value=4>All</option>
+				<option value=1>Pending</option>
+				<option value=2>Approved</option>
+				<option value=3>Denied</option>
+			</select>
+		</div>
 		<table class="reimbTable">
 			<thead>
 				<tr class="columns">

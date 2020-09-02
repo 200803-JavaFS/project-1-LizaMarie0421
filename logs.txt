@@ -465,3 +465,70 @@
 2020-09-02 14:38:12 INFO  UserService:22 - Finding User with id 1
 2020-09-02 14:38:12 INFO  ReimbursementService:42 - Updating reimbursement: Reimbursement [id=8, amount=67.89, submitted=2020-09-02 14:35:51.001, resolved=2020-09-02 14:38:12.317, description=work meal, author=User [id=15, username=kc2009, password=bestie, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=User [id=1, username=lizzvj, password=cashjoey, first=Lizette, last=Jimenez, email=lizzvj@gmail.com, userRole=UserRole [id=3, role=Manager]], status=ReimbStatus [id=2, status=Approved], type=ReimbType [id=3, type=Food]]
 2020-09-02 14:38:16 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 14:50:15 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 14:53:04 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 14:53:35 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:07:31 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:08:07 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:08:22 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:08:56 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:09:50 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:10:30 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:10:52 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:12:19 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:13:13 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:13:22 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:35:44 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:38:17 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:39:21 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 15:40:47 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:18:22 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:22:17 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:28:20 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:29:03 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:32:32 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:34:12 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:41:16 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-02 16:41:28 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-02 16:41:28 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:42:48 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:43:14 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:44:30 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:44:36 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:46:51 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 16:46:57 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:01:54 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-02 18:02:07 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-02 18:04:23 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-02 18:04:23 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-02 18:05:51 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:06:01 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-02 18:06:01 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-02 18:06:01 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:11:13 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:11:55 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:12:27 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:13:01 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:15:16 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:16:41 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:18:56 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:20:03 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:21:19 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-02 18:21:29 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-02 18:21:29 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-02 18:21:29 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:21:29 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:24:42 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:24:42 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:25:23 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:25:23 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:25:58 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:25:58 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:26:50 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:26:50 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:27:23 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:27:23 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:27:59 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:27:59 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-02 18:28:38 INFO  UserService:22 - Finding User with id 15
+2020-09-02 18:28:38 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
