@@ -1,15 +1,14 @@
-allReimbursementsByAuthor();
+// JavaScript source code
+allReimbursements();
 let userID = sessionStorage.getItem("idUser");
-async function allReimbursementsByAuthor() {
-    console.log("in all reimbursements")
-    document.getElementById("bodyTable").innerText = "";
+async function allReimbursements() {
+    console.log("in all reimbursements finance manager");
+    //document.getElementById("bodyTable").innerText = "";
     // need to get id and display reimbursements by id
     let table = document.getElementById("bodyTable");
-    let userID = sessionStorage.getItem("idUser");
-    console.log("user: " + userID);
+    
 
-
-    let resp = await fetch(url + "reimbursements/" + userID, {
+    let resp = await fetch(url + "reimbursements", {
         credentials: 'include',
     });
 
@@ -20,7 +19,7 @@ async function allReimbursementsByAuthor() {
         //put into the table instead of just console
         for (let reimbursement of data) {
             console.log(reimbursement);
-            
+
             let row = table.insertRow(0);
             let id = row.insertCell(0);
             let amount = row.insertCell(1);
@@ -32,20 +31,19 @@ async function allReimbursementsByAuthor() {
             let status = row.insertCell(7);
             let type = row.insertCell(8);
             id.innerHTML = reimbursement.id;
-            amount.innerHTML = "$ "+ reimbursement.amount;
+            amount.innerHTML = "$ " + reimbursement.amount;
             sTime.innerHTML = reimbursement.submitted;
             rTime.innerHTML = reimbursement.resolved;
             desc.innerHTML = reimbursement.description;
             author.innerHTML = reimbursement.author.username;
             //insert if statement if resolver is not equal to null or null
-
             let reimbResolver = reimbursement.resolver;
             if (reimbResolver != null) {
                 resolver.innerHTML = reimbursement.resolver.username;
             } else {
                 resolver.innerHTML = reimbursement.resolver;
             }
-            resolver.innerHTML = reimbursement.resolver;
+           
             status.innerHTML = reimbursement.status.status;
             type.innerHTML = reimbursement.type.type;
 
@@ -54,37 +52,36 @@ async function allReimbursementsByAuthor() {
     }
 }
 
-async function addReimb() {
-    let reimbAmount = document.getElementById("rAmount").value;
-    let reimbDesc = document.getElementById("rDesc").value;
+async function updateStatus() {
 
-    const rbsType = document.querySelectorAll('input[name="reimbType"]');
-    let typeChoice;
-    for (const rb of rbsType) {
+    let reimbID = document.getElementById("idInput").value;
+    console.log(reimbID);
+
+    //check which radio is checked
+    //if checked value= 0 update status to deny
+    //else if checked value = 1 update status to approve
+    const rbs = document.querySelectorAll('input[name="reimbStatus"]');
+    let selectedValue;
+    for (const rb of rbs) {
         if (rb.checked) {
-            typeChoice = rb.value;
+            selectedValue = rb.value;
             break;
         }
     }
-    console.log(typeChoice);
-
-
-    let reimbursement = {
-        amount: reimbAmount,
-        description: reimbDesc,
+    console.log("choice:"+selectedValue);
+    let status = {
+        id: reimbID,
         authorId: userID,
-        type: typeChoice
+        status: selectedValue
     }
-    console.log(reimbursement);
 
-    let resp = await fetch(url + "addReimbursement", {
+    let resp = await fetch(url + "updateStatus", {
         method: 'POST',
-        body: JSON.stringify(reimbursement),
+        body: JSON.stringify(status),
         credentials: "include"
     });
-
-    if (resp.status == 200) {
-        //call my find all by author func to refill table
-        allReimbursementsByAuthor();
+    if (resp.status === 200) {
+        console.log(resp);
+        allReimbursements();
     }
 }

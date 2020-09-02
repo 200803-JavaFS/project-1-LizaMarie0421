@@ -33,13 +33,13 @@ public class Driver {
 //		rDao.insertReimb(reim3);
 //		
 //		//System.out.println( new Timestamp(System.currentTimeMillis()));
-//		UserRole ur= new UserRole(2,"Employee");	
-//		User user= new User("kc2009", "bestie", "Kassandra", "Rodriguez", "kc2009@gmail.com",ur);
+		UserRole ur= new UserRole(2,"Employee");	
+		User user= new User(15,"kc2009", "bestie", "Kassandra", "Rodriguez", "kc2009@gmail.com",ur);
 //		//uDao.insertUser(user);
 //		uDao.insertUser(user);
-//		ReimbStatus rs=new ReimbStatus(1,"Pending");
-//		Reimbursement reim= new Reimbursement(75.55,new Timestamp(System.currentTimeMillis()),null, "test3",user,null,rs, new ReimbType(2,"Travel"));
-//		rDao.insertReimb(reim);
+		ReimbStatus rs=new ReimbStatus(1,"Pending");
+		Reimbursement reim= new Reimbursement(700,new Timestamp(System.currentTimeMillis()),null, "kc trying to go to mx",user,null,rs, new ReimbType(2,"Travel"));
+		rDao.insertReimb(reim);
 		
 		System.out.println("Printing all Users");
 		List<User> users= uDao.selectAll();
@@ -61,7 +61,7 @@ public class Driver {
 			System.out.println("this should be pending: "+ cs);
 		}
 		
-		System.out.println("Updated Reimbursement with id 1======================");
+		System.out.println("Updated Reimbursement with id 1 status to pending======================");
 		updateReimb();
 		
 		System.out.println("Finding by username og44======================");
@@ -94,7 +94,8 @@ public class Driver {
 	public static void updateReimb() {
 		Reimbursement r= rDao.selectById(1);
 		System.out.println("reimb with id 1: " + r);
-		r.setDescription("new Description test update");
+		ReimbStatus rStatus= new ReimbStatus(2,"Approved");
+		r.setStatus(rStatus);
 		rDao.update(r);
 		System.out.println(rDao.selectById(1));
 		System.out.println("what it should be updated to: " +r);

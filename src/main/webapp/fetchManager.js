@@ -50,6 +50,7 @@ async function redirectPage() {
         console.log(data);
         console.log(data.id);
         let idUser = data.id;
+        sessionStorage.setItem("idUser", idUser);
         console.log(data.userRole.role);
         let role = data.userRole.role;
         //let userID = data.id;

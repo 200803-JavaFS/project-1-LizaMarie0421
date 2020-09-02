@@ -43,28 +43,28 @@
 			<div class="formData">
 				<label class="description" for="reimbAmount">Amount </label>
 				<div>
-					<input id="element_1" name="reimbAmount" class="element text medium" type="text" maxlength="255" value="" />
+					<input id="rAmount" name="reimbAmount" class="element text medium" type="text" maxlength="255"/>
 				</div><p class="guidelines" id="guide_1"><small>Needs to be a number in the format 00.00</small></p>
 				<label class="description" for="reimbDesc">Description </label>
 				<div>
-					<input id="element_2" name="reimbDesc" class="element text large" type="text" maxlength="255" value="" />
+					<input id="rDesc" name="reimbDesc" class="element text large" type="text" maxlength="255" />
 				</div>
 				<br />
 				<label class="description" for="reimbType">Type of Reimbursement </label>
 				<br />
 				<span>
-					<input id="element_4_1" name="reimbType" class="element radio" type="radio" value="1" />
+					<input id="element_4_1" name="reimbType" class="element radio" type="radio" value="Lodging" />
 					<label class="choice" for="lodging">Lodging</label>
-					<input id="element_4_2" name="reimbType" class="element radio" type="radio" value="2" />
+					<input id="element_4_2" name="reimbType" class="element radio" type="radio" value="Travel" />
 					<label class="choice" for="element_3_2">Travel</label>
-					<input id="element_4_3" name="reimbType" class="element radio" type="radio" value="3" />
+					<input id="element_4_3" name="reimbType" class="element radio" type="radio" value="Food" />
 					<label class="choice" for="element_3_3">Food</label>
-					<input id="element_4_4" name="reimbType" class="element radio" type="radio" value="4" />
+					<input id="element_4_4" name="reimbType" class="element radio" type="radio" value="Other" />
 					<label class="choice" for="element_3_4">Other</label>
 
 				</span>
 				<br /><br />
-				<button type="button" id="addRequest" class="btn">Add Request</button>
+				<button onclick="addReimb()" type="button" id="addRequest" class="btn">Add Request</button>
 			</div>
 		</form>
 

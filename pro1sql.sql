@@ -139,4 +139,5 @@ CREATE OR REPLACE FUNCTION get_current_time() RETURNS TIME WITH TIME ZONE
        
       TRUNCATE reimbursement;
       
-     update
+DELETE FROM reimbursement WHERE reimb_id =5;
+DELETE FROM users WHERE id= 16;

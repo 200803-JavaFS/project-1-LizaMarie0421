@@ -29,15 +29,6 @@
 			</thead>
 			<tbody class="reimbTable" id="bodyTable">
 				<tr class="rows">
-					<td>cell1_1</td>
-					<td>cell2_1</td>
-					<td>cell3_1</td>
-					<td>cell4_1</td>
-					<td>cell5_1</td>
-					<td>cell6_1</td>
-					<td>cell7_1</td>
-					<td>cell8_1</td>
-					<td>cell9_1</td>
 				</tr>
 			</tbody>
 		</table>
@@ -50,21 +41,22 @@
 				<p></p>
 			</div>
 			<div class="formData">
-				<label class="description" for="reimbAmount">Reimbursement ID </label>
-				<input id="idInput" name="reimbAmount" class="element number" size="1" type="number" />
+				<label class="description" for="reimbID">Reimbursement ID </label>
+				<input id="idInput" name="reimbID" class="element number" size="1" type="number" />
 				<br />
 				<span>
-					<input id="element_4_1" name="reimbStatus" class="element radio" type="radio" value="3" />
+					<input id="rSApprove" name="reimbStatus" class="element radio" type="radio" value="Approved"  />
 					<label class="choice" for="reimbStatus">Approve</label>
-					<input id="element_4_2" name="reimbStatus" class="element radio" type="radio" value="3" />
+					<input id="rSDeny" name="reimbStatus" class="element radio" type="radio"  value="Denied"/>
 					<label class="choice" for="reimbStatus">Deny</label>
 				</span>
 				<br /><br />
-				<button type="button" id="addRequest" class="btn">Update Request</button>
+				<button onclick="updateStatus()" type="button" id="updateRequest" class="btn">Update Request</button>
 			</div>
 		</form>
 	</div>
 
-	<script src="managerFetch.js"></script>
+	<script src="fetchManager.js"></script>
+	<script src="fetchFMFR.js"></script>
 </body>
 </html>

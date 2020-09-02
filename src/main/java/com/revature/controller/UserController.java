@@ -23,7 +23,6 @@ public class UserController {
 	private static ReimbursementService rs = new ReimbursementService();
 
 	public void setUserRole(HttpServletRequest req, HttpServletResponse res, User u) throws IOException {
-		//Hibernate.initialize(u.getUserRole());
 		System.out.println("in method to sent user role as object");		
 		if(u==null) {
 			res.setStatus(204);

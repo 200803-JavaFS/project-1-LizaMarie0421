@@ -66,15 +66,22 @@ public class MasterServlet extends HttpServlet{
 					break;
 				case "reimbursements":
 					System.out.println("in reimbursements");
-//					System.out.println("user with user ID:" + u.getId());
-					//rc.getAllReimbursementsByAuthor(req,res, u);
+					if (portions.length==2){
+						int id= Integer.parseInt(portions[1]);
+						rc.getAllReimbursementsByAuthor(res, id);
+					}else {
+						rc.getAllReimbursements(res);
+					}
+					
 					break;
-				
-//				case "employeeSuccess":
-//					if (req.getMethod().equals("POST")) {
-//						System.out.println("inside employee case");
-//						uc.display(req, res);
-//					}
+				case "updateStatus":
+					System.out.println("in update status");
+					rc.updateStatus(req,res);
+					break;
+				case "addReimbursement":
+					System.out.println("in add reimbursement");
+					rc.addReimbursement(req,res);
+					break;
 			}
 					
 		}catch (NumberFormatException e ) {

@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.User;
-import com.revature.models.UserRole;
 import com.revature.services.LoginService;
 import com.revature.services.UserService;
 
