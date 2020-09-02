@@ -114,20 +114,32 @@ public class ReimbController {
 		Timestamp ts= new Timestamp(System.currentTimeMillis());
 		String description = rdto.getDescription();
 		User author = us.findById(rdto.getAuthorId());
-		ReimbStatus rs= new ReimbStatus(1, "Pending");
-		//dkdnn
+		ReimbStatus rStatus= new ReimbStatus(1, "Pending");
+		
+		String type = rdto.getType();
+		System.out.println(type);
+		
+		ReimbType rt=null;
+		if (type.equals("Lodging")) {
+			rt=new ReimbType(1, "Lodging");
+		}else if (type.equals("Travel")) {
+			rt=new ReimbType(2, "Travel");
+		}else if (type.equals("Food")) {
+			rt=new ReimbType(3, "Food");
+		}else if (type.equals("Other")) {
+			rt=new ReimbType(4, "Other");
+		}
 		//create new reimbursement with constructor
-		//Reimbursement(double amount, Timestamp submitted, Timestamp resolved, String description, User author,
-		//User resolver, ReimbStatus status, ReimbType type)
+		Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rStatus, rt);
+		System.out.println(addedReimb);
 
-//		
-//		if(as.addAvenger(a)) {
-//			//add to database
-//			res.setStatus(201);
-//			res.getWriter().println("Avenger was created");
-//		}else {
-//			res.setStatus(403);
-//		}
+		if(rs.addReimbursement(addedReimb)) {
+			//add to database
+			res.setStatus(200);
+			res.getWriter().println("Reimbursement was created");
+		}else {
+			res.setStatus(403);
+		}
 		
 	}
 
