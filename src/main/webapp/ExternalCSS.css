@@ -41,7 +41,10 @@
     padding-top: 110px;
 }
 
-
+.reimbTable {
+    margin: 25px auto auto 20px;
+    
+}
 
 table.reimbTable {
     font-family: Verdana, Geneva, sans-serif;
@@ -50,6 +53,9 @@ table.reimbTable {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
+    border-spacing: 50px;
+    width: 90%; 
+    
 }
 
     table.reimbTable td, table.reimbTable th {
@@ -120,4 +126,9 @@ table.reimbTable {
     text-align: center;
     vertical-align: middle;
     glyph-orientation-horizontal: inherit;
+}
+
+#logout {
+   float: right;
+   margin-right: 118px;
 }

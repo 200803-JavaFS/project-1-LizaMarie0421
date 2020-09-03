@@ -108,6 +108,7 @@ public class LoginController {
 			User u= (User) ses.getAttribute("user");
 			ses.invalidate();
 			res.setStatus(200);
+			System.out.println("logout successful");
 			res.getWriter().println(u.username + " has logged out successfully");
 		} else {
 			res.setStatus(400);

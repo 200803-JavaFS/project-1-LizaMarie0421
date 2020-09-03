@@ -8,13 +8,14 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.models.ReimbStatus;
 import com.revature.models.ReimbType;
 import com.revature.models.Reimbursement;
 import com.revature.models.ReimbursementDTO;
 import com.revature.models.User;
+import com.revature.services.ReimbStatusService;
+import com.revature.services.ReimbTypeService;
 import com.revature.services.ReimbursementService;
 import com.revature.services.UserService;
 
@@ -23,6 +24,8 @@ public class ReimbController {
 	private static ReimbursementService rs = new ReimbursementService();
 	private static ObjectMapper om= new ObjectMapper();
 	private static UserService us= new UserService();
+	private static ReimbStatusService statusS= new ReimbStatusService();
+	private static ReimbTypeService typeS= new ReimbTypeService();
 	
 	public void getAllReimbursementsByAuthor(HttpServletResponse res, int id) throws IOException {
 		User u=us.findById(id);
@@ -115,20 +118,20 @@ public class ReimbController {
 		Timestamp ts= new Timestamp(System.currentTimeMillis());
 		String description = rdto.getDescription();
 		User author = us.findById(rdto.getAuthorId());
-		ReimbStatus rnewStatus= new ReimbStatus(1, "Pending");
+		ReimbStatus rnewStatus= statusS.findByStatus("Pending");
 		
 		String type = rdto.getType();
 		System.out.println(type);
 		
 		ReimbType rt=null;
 		if (type.equals("Lodging")) {
-			rt=new ReimbType(1, "Lodging");
+			rt=typeS.findByType("Lodging");
 		}else if (type.equals("Travel")) {
-			rt=new ReimbType(2, "Travel");
+			rt=typeS.findByType("Travel");
 		}else if (type.equals("Food")) {
-			rt=new ReimbType(3, "Food");
+			rt=typeS.findByType("Food");
 		}else if (type.equals("Other")) {
-			rt=new ReimbType(4, "Other");
+			rt=typeS.findByType("Other");
 		}
 		//create new reimbursement with constructor
 		Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rnewStatus, rt);

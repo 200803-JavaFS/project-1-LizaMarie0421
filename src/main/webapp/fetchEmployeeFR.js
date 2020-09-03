@@ -63,6 +63,7 @@ async function allReimbursementsByAuthor() {
 
 
         }
+       
     }
 }
 
@@ -98,5 +99,16 @@ async function addReimb() {
     if (resp.status == 200) {
         //call my find all by author func to refill table
         allReimbursementsByAuthor();
+    }
+}
+
+async function logout() {
+
+    let resp = await fetch(url + "logout", {
+        credentials: 'include',
+    });
+    if (resp.status === 200) {
+        console.log("logout");
+        window.location.href = "index.html";
     }
 }

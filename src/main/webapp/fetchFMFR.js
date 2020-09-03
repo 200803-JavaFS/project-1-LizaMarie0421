@@ -94,8 +94,10 @@ async function updateStatus() {
         body: JSON.stringify(status),
         credentials: "include"
     });
-    if (resp.status === 200) {
+    if (resp.status === 201) {
         console.log(resp);
+       // location.reload();
+        document.getElementById("bodyTable").innerText = "";
         allReimbursements();
     }
 }
@@ -191,3 +193,14 @@ async function getSelectedOption(sel) {
     }
 }
 
+
+async function logout() {
+
+    let resp = await fetch(url + "logout", {
+        credentials: 'include',
+    });
+    if (resp.status === 200) {
+        console.log("logout");
+        window.location.href = "index.html";
+    }
+}

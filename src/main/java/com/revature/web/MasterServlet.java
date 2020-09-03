@@ -93,6 +93,9 @@ public class MasterServlet extends HttpServlet{
 					}
 					
 					break;
+				case "logout":
+					lc.logout(req,res);
+					break;
 			}
 					
 		}catch (NumberFormatException e ) {
