@@ -7,6 +7,7 @@ import javax.persistence.criteria.CriteriaQuery;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.revature.models.User;
 import com.revature.models.UserRole;
@@ -31,11 +32,14 @@ public class UserDAO implements IUserDAO{
 	@Override
 	public boolean updateUser(User u) {
 		Session ses = HibernateUtil.getSession();
+		Transaction tx= ses.beginTransaction();
 		try {
 			ses.merge(u);
+			tx.commit();
 			return true;
-		}catch (HibernateException e) {
+		} catch(HibernateException e) {
 			e.printStackTrace();
+			tx.rollback();
 			return false;
 		}
 	}

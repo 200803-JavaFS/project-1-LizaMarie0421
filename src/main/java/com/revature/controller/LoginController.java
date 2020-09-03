@@ -73,6 +73,7 @@ public class LoginController {
 			System.out.println(body);
 			User u= om.readValue(body, User.class);
 			
+			
 			if(ls.login(u)) {
 				//System.out.println("hash: "+ u.getPassword().hashCode());
 				

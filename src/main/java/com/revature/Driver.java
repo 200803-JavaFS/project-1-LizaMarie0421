@@ -19,7 +19,6 @@ public class Driver {
 	
 	public static void main(String[] args) {
 		//insertValues();
-		
 //		UserRole ur2= new UserRole(2,"Employee");
 //		User user2= new User(2,"og44", "iluvmichelle", "Barack", "Obama", "pres@gmail.com",ur2);
 ////		ReimbStatus rs=new ReimbStatus(1,"Pending");
@@ -41,26 +40,45 @@ public class Driver {
 //		Reimbursement reim= new Reimbursement(700,new Timestamp(System.currentTimeMillis()),null, "kc trying to go to mx",user,null,rs, new ReimbType(2,"Travel"));
 //		rDao.insertReimb(reim);
 //		
-		System.out.println("Printing all Users");
-		List<User> users= uDao.selectAll();
-		for(User u: users) {
-			System.out.println(u);
-		}
-		
+//		User testHashUser = uDao.selectById(1);
+//		StringBuilder sb = new StringBuilder();
+//		int HashPass= testHashUser.getPassword().hashCode();
+//		System.out.println("int: " + HashPass);
+//		sb.append(HashPass);
+//		String hashedPassword= sb.toString();
+//		System.out.println("string: "+ hashedPassword);
+//		testHashUser.setPassword(hashedPassword);
+//		uDao.updateUser(testHashUser);
+//		System.out.println(testHashUser);
+//		
+//		
+		updatePass();
+//		System.out.println("Printing all Users");
+//		List<User> users= uDao.selectAll();
+//		for(User u: users) {
+//			System.out.println(u);
+//			StringBuilder sb = new StringBuilder();
+//			sb.append(u.getPassword().hashCode());
+//			String hashPass = sb.toString();
+//			u.setPassword(u.getPassword().hashCode());
+//			System.out.println(u);
+//			System.out.println(u.getPassword().hashCode());
+//		}
+//		
 //		User kc= uDao.selectByUsername("lizzvj");
 //		System.out.println("kc info: "+ kc);
-		System.out.println("Printing all Reimbursements=======================");
-		List<Reimbursement> reimbursements= rDao.selectAll();
-		for(Reimbursement r: reimbursements) {
-			System.out.println(r);
-		}
-		
-		System.out.println("Printing all Pending===================================");
-		List<Reimbursement> checkStatus = rDao.selectByStatus(1);
-		for(Reimbursement cs: checkStatus) {
-			System.out.println("this should be pending: "+ cs);
-		}
-		
+//		System.out.println("Printing all Reimbursements=======================");
+//		List<Reimbursement> reimbursements= rDao.selectAll();
+//		for(Reimbursement r: reimbursements) {
+//			System.out.println(r);
+//		}
+//		
+//		System.out.println("Printing all Pending===================================");
+//		List<Reimbursement> checkStatus = rDao.selectByStatus(1);
+//		for(Reimbursement cs: checkStatus) {
+//			System.out.println("this should be pending: "+ cs);
+//		}
+//		
 //		System.out.println("Updated Reimbursement with id 1 status to pending======================");
 //		updateReimb();
 //		
@@ -99,5 +117,23 @@ public class Driver {
 		rDao.update(r);
 		System.out.println(rDao.selectById(1));
 		System.out.println("what it should be updated to: " +r);
+	}
+	
+	public static void updatePass() {
+		System.out.println("Printing all Users");
+		List<User> users= uDao.selectAll();
+		for(User u: users) {
+			StringBuilder sb = new StringBuilder();
+			int HashPass= u.getPassword().hashCode();
+			System.out.println("int: " + HashPass);
+			sb.append(HashPass);
+			String hashedPassword= sb.toString();
+			System.out.println("string: "+ hashedPassword);
+			u.setPassword(hashedPassword);
+			uDao.updateUser(u);
+			System.out.println(u);
+			
+		}
+		
 	}
 }
