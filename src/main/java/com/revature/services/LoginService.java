@@ -11,7 +11,6 @@ public class LoginService {
 		String hashedPassword= sb.toString();
 		
 		User uN = us.findByUserPassword(u.username,hashedPassword);
-		//System.out.println(u.password);
 		System.out.println("hashed: "+ hashedPassword);
 		System.out.println("idfk: "+uN.getPassword());
 		

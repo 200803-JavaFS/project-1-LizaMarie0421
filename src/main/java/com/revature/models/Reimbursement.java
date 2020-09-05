@@ -78,29 +78,6 @@ public class Reimbursement implements Serializable {
 		this.status = status;
 		this.type = type;
 	}
-	
-	public Reimbursement(double amount, String description, User author, User resolver, ReimbStatus status,
-			ReimbType type) {
-		super();
-		this.amount = amount;
-		this.description = description;
-		this.author = author;
-		this.resolver = resolver;
-		this.status = status;
-		this.type = type;
-	}
-	
-	public Reimbursement(int id, double amount, String description, User author, User resolver, ReimbStatus status,
-			ReimbType type) {
-		super();
-		this.id = id;
-		this.amount = amount;
-		this.description = description;
-		this.author = author;
-		this.resolver = resolver;
-		this.status = status;
-		this.type = type;
-	}
 	public int getId() {
 		return id;
 	}

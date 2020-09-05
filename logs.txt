@@ -1768,3 +1768,11 @@
 2020-09-03 14:33:54 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=60.23, submitted=2020-09-03 14:33:54.517, resolved=null, description=gas, author=User [id=15, username=kc2009, password=-1392494080, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=2, type=Travel]]
 2020-09-03 14:33:54 INFO  UserService:22 - Finding User with id 15
 2020-09-03 14:33:54 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-04 21:49:27 INFO  UserService:38 - Adding User: User [id=0, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=1, role=Employee]]
+2020-09-04 21:49:38 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-04 21:49:38 INFO  UserService:27 - Finding User with username: lizzvj and password: 1770859902
+2020-09-04 21:51:05 INFO  UserService:32 - Finding User with username: lizzvj
+2020-09-04 21:51:13 INFO  UserService:27 - Finding User with username: lizzvj and password: 1770859902
+2020-09-04 21:51:51 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-04 21:54:50 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-04 21:54:50.888, resolved=null, description=testDescription, author=User [id=0, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=1, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-04 21:58:32 INFO  UserService:22 - Finding User with id 17
