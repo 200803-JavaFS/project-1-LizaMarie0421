@@ -1803,3 +1803,417 @@
 2020-09-04 22:53:13 INFO  UserService:22 - Finding User with id 1
 2020-09-04 22:53:13 INFO  ReimbursementService:42 - Updating reimbursement: Reimbursement [id=12, amount=60.23, submitted=2020-09-03 14:33:54.517, resolved=2020-09-04 22:53:13.859, description=gas, author=User [id=15, username=kc2009, password=-1392494080, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], status=ReimbStatus [id=3, status=Denied], type=ReimbType [id=2, type=Travel]]
 2020-09-04 22:53:14 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 11:55:01 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-05 11:57:03 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-05 11:57:49 INFO  UserService:27 - Finding User with username: kc2009 and password: bestie
+2020-09-05 11:59:12 INFO  UserService:22 - Finding User with id 15
+2020-09-05 11:59:44 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:00:56 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:01:58 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:02:58 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:03:02 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:06:45 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:06:49 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:08:23 INFO  UserService:27 - Finding User with username: lizzvj and password: cashjoey
+2020-09-05 12:08:26 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:08:26 INFO  ReimbursementService:42 - Updating reimbursement: Reimbursement [id=13, amount=67.86, submitted=2020-09-05 12:08:26.845, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=1, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:08:26 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:08:27 INFO  UserService:22 - Finding User with id 1
+2020-09-05 12:08:27 INFO  UserService:43 - Updating User: User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]]
+2020-09-05 12:08:27 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:08:27 INFO  UserService:22 - Finding User with id 17
+2020-09-05 12:08:59 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:09:02 INFO  UserService:27 - Finding User with username: kc2009 and password: 1240881889
+2020-09-05 12:09:02 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:09:02 INFO  ReimbursementService:42 - Updating reimbursement: Reimbursement [id=13, amount=67.86, submitted=2020-09-05 12:09:02.855, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=1, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:09:02 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:09:03 INFO  UserService:22 - Finding User with id 1
+2020-09-05 12:09:03 INFO  UserService:43 - Updating User: User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]]
+2020-09-05 12:09:03 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:09:03 INFO  UserService:22 - Finding User with id 17
+2020-09-05 12:10:30 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:10:33 INFO  UserService:27 - Finding User with username: kc2009 and password: 1240881889
+2020-09-05 12:10:33 INFO  UserService:22 - Finding User with id 17
+2020-09-05 12:10:59 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:11:02 INFO  UserService:27 - Finding User with username: kc2009 and password: 1240881889
+2020-09-05 12:11:58 INFO  UserService:27 - Finding User with username: kc2009 and password: 1240881889
+2020-09-05 12:13:25 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:13:29 INFO  UserService:27 - Finding User with username: kc2009 and password: 1240881889
+2020-09-05 12:17:21 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 12:24:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:25:27 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:25:30 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:26:30 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:28:07 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:31:27 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:33:50 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:33:53 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:34:58 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 12:34:58.488, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:35:02 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:36:25 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:36:28 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:36:28 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:36:28 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:36:28 INFO  UserService:22 - Finding User with id 17
+2020-09-05 12:36:28 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:37:22 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:37:25 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:37:25 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:37:25 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:37:25 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:37:30 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:37:34 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:37:34 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:37:34 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:37:34 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:39:23 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:39:27 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:39:27 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:39:27 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:39:27 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:39:27 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 12:39:27.389, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:39:27 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:41:17 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:41:21 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:41:21 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:41:21 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:41:21 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:41:21 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=13, amount=67.86, submitted=2020-09-05 12:41:21.379, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:41:21 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:41:56 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:42:00 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:42:00 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:42:00 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:42:00 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:42:01 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=13, amount=67.86, submitted=2020-09-05 12:42:01.021, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:42:01 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:48:38 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:48:42 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:49:10 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:49:14 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:49:14 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:50:46 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:50:49 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:50:50 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:52:47 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:52:51 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:52:51 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:53:03 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:53:07 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:53:07 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:54:39 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:54:42 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 12:54:42 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:54:42 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:54:43 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:54:43 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:54:43 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:54:43 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:54:43 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 12:54:43.36, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:54:43 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:54:43 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:55:24 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:55:28 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 12:55:29 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:55:29 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:55:29 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:55:29 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:55:29 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:55:29 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:55:29 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 12:55:29.716, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:55:29 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:55:30 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:57:14 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:57:18 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 12:57:18 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:57:18 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:57:18 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:57:18 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:57:18 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:57:18 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:57:18 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 12:57:18.845, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:57:18 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:57:19 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 12:57:27 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 12:57:32 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 12:57:32 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:57:32 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 12:57:32 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 12:57:32 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 12:57:32 INFO  UserService:22 - Finding User with id 15
+2020-09-05 12:57:33 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 12:57:33 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 12:57:33.046, resolved=null, description=testDescription, author=User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=1, type=Lodging]]
+2020-09-05 12:57:33 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 12:57:33 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 13:03:12 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:15 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:16 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:16 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:03:16 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:16 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:03:16 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:16 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:17 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:03:17 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:17 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 13:03:17.212, resolved=null, description=testDescription, author=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=4, type=Other]]
+2020-09-05 13:03:17 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:17 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:03:17 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:03:17 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:03:17 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 13:04:40 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:44 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 13:04:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:44 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:04:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:44 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:04:44 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:04:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 13:04:45.627, resolved=null, description=testDescription, author=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=4, type=Other]]
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:45 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:04:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:04:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:04:46 INFO  ReimbursementService:23 - Finding Reimbursement with id 13
+2020-09-05 13:05:02 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:05 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:05 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:05:06 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:06 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:06 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:05:07 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:07 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 13:05:07.066, resolved=null, description=testDescription, author=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=4, type=Other]]
+2020-09-05 13:05:07 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:07 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:05:07 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:05:07 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:05:07 INFO  ReimbursementService:23 - Finding Reimbursement with id 15
+2020-09-05 13:06:09 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:13 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 13:06:13 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:13 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:06:13 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:13 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:06:13 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:06:13 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:13 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:06:13 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:13 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:14 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 13:06:14.33, resolved=null, description=testDescription, author=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=4, type=Other]]
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:14 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:14 INFO  ReimbursementService:23 - Finding Reimbursement with id 15
+2020-09-05 13:06:14 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:14 INFO  UserService:16 - Finding ReimbStatus with status: pending
+2020-09-05 13:06:27 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:30 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:30 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:30 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 13:06:30 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:30 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:30 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:30 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:06:30 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:30 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:30 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:30 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:06:30 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:31 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:31 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 13:06:31.788, resolved=null, description=testDescription, author=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=4, type=Other]]
+2020-09-05 13:06:31 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:31 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:32 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:06:32 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:32 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:32 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:32 INFO  ReimbursementService:23 - Finding Reimbursement with id 15
+2020-09-05 13:06:32 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:32 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:32 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:41 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:45 INFO  UserService:38 - Adding User: User [id=18, username=testUsername, password=testPassword, first=testFirstName, last=testLastName, email=test@test.com, userRole=UserRole [id=2, role=Employee]]
+2020-09-05 13:06:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:45 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:06:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:45 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:06:45 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:06:45 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:45 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  ReimbursementService:37 - Adding reimbursements: Reimbursement [id=0, amount=67.86, submitted=2020-09-05 13:06:46.583, resolved=null, description=testDescription, author=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], resolver=null, status=ReimbStatus [id=1, status=Pending], type=ReimbType [id=4, type=Other]]
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:06:46 INFO  ReimbursementService:23 - Finding Reimbursement with id 15
+2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:06:47 INFO  UserService:16 - Finding ReimbStatus with status: Other

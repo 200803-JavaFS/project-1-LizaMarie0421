@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -27,9 +28,13 @@ public class ServiceTest {
 	public static UserService us;
 	public static ReimbursementService rs;
 	public static ReimbStatusService rStatusS;
-	public static ReimbTypeService tStatusS;
+	public static ReimbTypeService rTypeS;
+	
+	
 	public static UserRole testRole;
+	public static UserRole testRoleMan;
 	public static User testUser;
+	public static User testUserMan;
 	public static ReimbStatus testReimbStatus;
 	public static ReimbType testReimbType;
 	public static Reimbursement testReimb;
@@ -46,30 +51,37 @@ public class ServiceTest {
 		ls = new LoginService();
 		us = new UserService();
 		rs = new ReimbursementService();
-		tStatusS= new ReimbTypeService();
+		rTypeS= new ReimbTypeService();
 		rStatusS= new ReimbStatusService();
 		
 	}	
 	
 	@Before 
 	public void startup() {
-		testRole= new UserRole(1, "Employee");
+		//2== employee, 3== manager
+		testRole= new UserRole(2, "Employee");
+		testRoleMan= new UserRole(3, "Manager");
 		//user we want add
-		testUser= new User ("testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com", testRole);
+		testUser= new User (18,"testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com", testRole);
+		testUserMan= new User (20,"testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com", testRoleMan);
 		
 		testReimbStatus= new ReimbStatus (1,"Pending");
 		testReimbType = new ReimbType(1, "Lodging");
 		//reimb to add thus they are NOT using constructor with id
-		testReimb= new Reimbursement (67.86,new Timestamp(System.currentTimeMillis()), null, "testDescription", testUser, null, testReimbStatus, testReimbType);
+		testReimb= new Reimbursement (67.86,new Timestamp(System.currentTimeMillis()), null, "testDescription", us.findById(1), null, rStatusS.findByStatus("Pending"), rTypeS.findByType("Other"));
 	}
-	 //this does not worrrkkkk
-//	@Test
-//	public void testLogin() {
-//		User u= us.findByUserPassword("lizzvj", "cashjoey");
-//		boolean loginBool= ls.login(u);
-//		assertTrue(loginBool);
-//	}
+
+	//this works
+	@Test
+	public void testLogin() {
+		System.out.println("in login");
 		
+		User u= new User(15,"kc2009", "bestie","Kassandra", "Rodriguez", "kc2009@gmail.com", testRole);
+		System.out.println(u);
+		boolean loginBool= ls.login(u);
+		assertTrue(loginBool);
+	}
+
 	//this worksss
 //	@Test
 //	public void addUserTest() {
@@ -77,8 +89,8 @@ public class ServiceTest {
 //		assertEquals(userAdd,true);
 //		
 //	}
-	
-	//this worrks too
+//	
+//	//this worrks too
 //	@Test
 //	public void addReimbTest() {
 //		boolean reimbAdd= rs.addReimbursement(testReimb);
@@ -86,50 +98,90 @@ public class ServiceTest {
 //		
 //	}
 	
-	//works
-//	@Test
-//	public void getUserbyId() {
-//		//id test ==17
-//		User u= us.findById(17);
-//		User testAgainst=new User (17,"testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com", testRole);
-//		assertEquals(u,testAgainst);
-//	}
+	//**********this works too***************
 	
+	//works
 	@Test 
 	public void getReimbById() {
 		//13 id testReimb
-		Reimbursement r = rs.findById(13);
+		Reimbursement r = rs.findById(15);
+		System.out.println(r);
 		//it doesn't like timestamp
-		Reimbursement rTestAgainst =new Reimbursement (13,67.86,testReimb.getSubmitted(), null, "testDescription", testUser, null, testReimbStatus, testReimbType);
+		Reimbursement rTestAgainst =new Reimbursement (15,67.86,r.getSubmitted(), null, "testDescription", us.findById(1), null, rStatusS.findByStatus("Pending"), rTypeS.findByType("Other"));
+		System.out.println(rTestAgainst);
 		assertEquals(r,rTestAgainst);
 	}
-	//works
-//	@Test
-//	public void updateUser() {
-//		//we are updating username
-//		User u= us.findById(1);
-//		//change before running test again
-//		u.setEmail("bigSis@gmail.com");
-//		boolean newU= us.updateUser(u);
-//		assertTrue(newU);
-//	}
 
-	//works
-//	@Test 
-//	public void updateReimb() {
-//		Reimbursement r=rs.findById(13);
-//		r.setSubmitted(new Timestamp(System.currentTimeMillis()) );
-//		boolean reimbBool = rs.updateReimbursement(r);
-//		Reimbursement rTestAgainst = new Reimbursement (13, 67.86,new Timestamp(System.currentTimeMillis()), null, "testDescription", testUser, null, testReimbStatus, testReimbType);		
-//	}
+	
+	
+	
+	
+	/*This all works below*************/
+
+	@Test
+	public void findUserById() {
+		System.out.println("In find by user ID");
+		User u= us.findById(15);
+		System.out.println(u.password);
+		User testAgainst = new User(15,"kc2009", u.password,"Kassandra", "Rodriguez", "kc2009@gmail.com", testRole);
+		assertEquals(u,testAgainst);
+	}
+	@Test
+	public void findUserByUsername() {
+		System.out.println("In find by username");
+		User u= us.findByUsername("kc2009");
+		System.out.println(u.password);
+		User testAgainst = new User(15,"kc2009", u.password,"Kassandra", "Rodriguez", "kc2009@gmail.com", testRole);
+		assertEquals(u,testAgainst);
+	}
+	
+	public void findUserByCredentials() {
+		System.out.println("In find by credentials");
+		User u= us.findByUserPassword("kc2009", "bestie");
+		System.out.println(u.password);
+		User testAgainst = new User(15,"kc2009", u.password,"Kassandra", "Rodriguez", "kc2009@gmail.com", testRole);
+		assertEquals(u,testAgainst);
+	}
 	
 	@Test
-	public void findUserByUserName() {
-		User u= us.findByUserPassword("kc2009","bestie");
-		//(int id, String username, String password, String first, String last, String email, UserRole userRole)
-		//User testAgainst = new User(15,"kc2009", "bestie","Kassandra", "Rodriguez", "kc2009@gmail.com", testRole);
-		assertTrue(u!=null);
+	public void findReimbStatusByStatus() {
+		System.out.println("in find reimb by status test");
+		
+		ReimbStatus rs= rStatusS.findByStatus("Pending");
+		assertEquals(testReimbStatus,rs);
 	}
+	
+	@Test
+	public void findReimbTypeByType() {
+		System.out.println("in find reimb by type test");
+		
+		ReimbType rt= rTypeS.findByType("Lodging");
+		assertEquals(testReimbType,rt);
+	}
+	
+	@Test 
+	public void findReimbByUser() {
+		User u = us.findById(15);
+		List<Reimbursement> rList= rs.findByUser(u);
+		assertTrue(rList!=null);
+	}
+	
+	@Test 
+	public void findAllReimb() {
+		List<Reimbursement> rList= rs.findAll();
+		assertTrue(rList!=null);
+	}
+	
+	@Test 
+	public void findReimbByStatus() {
+		List<Reimbursement> rListStatus= rs.findByStatus(1);
+		for(Reimbursement r : rListStatus) {
+			ReimbStatus status= r.getStatus();
+			assertEquals(status,testReimbStatus);
+		}
+		//assertTrue(rListStatus!=null);
+	}
+	
 	
 	/**
 	 * 
@@ -144,7 +196,7 @@ public class ServiceTest {
 		ls = null;
 		us = null;
 		rs = null;
-		tStatusS= null;
+		rTypeS= null;
 		rStatusS=null;
 	}
 	

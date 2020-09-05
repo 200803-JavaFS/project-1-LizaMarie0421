@@ -141,3 +141,6 @@ CREATE OR REPLACE FUNCTION get_current_time() RETURNS TIME WITH TIME ZONE
       
 DELETE FROM reimbursement WHERE reimb_id =5;
 DELETE FROM users WHERE id= 16;
+
+DELETE FROM reimbursement WHERE reimb_description = 'testDescription';
+DELETE FROM users WHERE email='test@test.com';
