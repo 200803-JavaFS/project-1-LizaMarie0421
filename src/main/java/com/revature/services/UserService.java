@@ -12,11 +12,11 @@ import com.revature.models.User;
 public class UserService {
 	private static final Logger log = LogManager.getLogger(UserService.class);
 	private static IUserDAO uDao= new UserDAO();
-	
-	public List<User> findAll(){
-		log.info("Retrieving all users");
-		return uDao.selectAll();
-	}
+//	
+//	public List<User> findAll(){
+//		log.info("Retrieving all users");
+//		return uDao.selectAll();
+//	}
 
 	public User findById(int id) {
 		log.info("Finding User with id "+ id);
