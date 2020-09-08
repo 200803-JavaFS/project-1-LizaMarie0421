@@ -2273,3 +2273,47 @@
 2020-09-08 09:05:30 INFO  UserService:22 - Finding User with id 1
 2020-09-08 09:05:30 INFO  ReimbursementService:42 - Updating reimbursement: Reimbursement [id=21, amount=22.75, submitted=2020-09-08 09:04:54.216, resolved=2020-09-08 09:05:30.4, description=gas, author=User [id=15, username=kc2009, password=-1392494080, first=Kassandra, last=Rodriguez, email=kc2009@gmail.com, userRole=UserRole [id=2, role=Employee]], resolver=User [id=1, username=lizzvj, password=24741484, first=Lizette, last=Jimenez, email=bigSis@gmail.com, userRole=UserRole [id=3, role=Manager]], status=ReimbStatus [id=2, status=Approved], type=ReimbType [id=2, type=Travel]]
 2020-09-08 09:05:30 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-08 09:41:05 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:11 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-08 09:41:11 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:11 INFO  UserService:22 - Finding User with id 15
+2020-09-08 09:41:11 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-08 09:41:11 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:11 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:11 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:12 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 15
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:12 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:41:12 INFO  ReimbursementService:23 - Finding Reimbursement with id 15
+2020-09-08 09:41:12 INFO  UserService:22 - Finding User with id 1
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-08 09:41:12 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-08 09:42:30 INFO  UserService:27 - Finding User with username: og44 and password: -1852087835
+2020-09-08 09:42:42 INFO  UserService:27 - Finding User with username: og44 and password: -1852087835
+2020-09-08 09:42:43 INFO  UserService:32 - Finding User with username: og44
+2020-09-08 09:42:43 INFO  UserService:22 - Finding User with id 2
+2020-09-08 09:42:43 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=2
