@@ -9,14 +9,15 @@
 	<name>project1</name>
 	<description>Employee Reimbursement System</description>
 
-<build>
-	<finalName>project1</finalName>
-</build> 
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
+	<build>
+		<finalName>project1</finalName>
+	</build>
 	<dependencies>
 		<!-- the dependencies we want latest unit is 4.1.34 found on the website -->
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -63,7 +64,7 @@
 			<version>2.11.2</version>
 		</dependency>
 
-	<!-- this is added with hibernateProj next two with core and validator -->
+		<!-- this is added with hibernateProj next two with core and validator -->
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
