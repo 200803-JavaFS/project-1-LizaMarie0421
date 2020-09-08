@@ -26,11 +26,7 @@ async function loginFunc() {
     if (resp.status === 200) {
         console.log(resp);
         document.getElementById("login-row").innerText = "YOU HAVE LOGGED IN.";
-        redirectPage();
-        //redirect to employee pages 
-        //redirectEmployee();
-        //redirectManager();
-        //add avenger button show
+        redirectPage()
 
     } else {
         document.getElementById("login-row").innerText = "Login failed!";
@@ -38,7 +34,6 @@ async function loginFunc() {
 }
 async function redirectPage() {
 
-    //indow.location.href = ".html";
     let resp = await fetch(url + "success", {
         method: 'GET',
         credentials: "include"
