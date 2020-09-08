@@ -2217,3 +2217,42 @@
 2020-09-05 13:06:46 INFO  UserService:22 - Finding User with id 1
 2020-09-05 13:06:46 INFO  UserService:16 - Finding ReimbStatus with status: Pending
 2020-09-05 13:06:47 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:39 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:43 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:43 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:43 INFO  UserService:27 - Finding User with username: kc2009 and password: -1392494080
+2020-09-05 13:08:43 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:43 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:43 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:43 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:08:43 INFO  ReimbursementService:28 - Retrieving all reimbursements tied to user with user_id=15
+2020-09-05 13:08:43 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:43 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:43 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  UserService:32 - Finding User with username: kc2009
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 15
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Lodging
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  ReimbursementService:18 - Retrieving all reimbursements
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
+2020-09-05 13:08:44 INFO  ReimbursementService:23 - Finding Reimbursement with id 15
+2020-09-05 13:08:44 INFO  UserService:22 - Finding User with id 1
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Pending
+2020-09-05 13:08:44 INFO  UserService:16 - Finding ReimbStatus with status: Other
